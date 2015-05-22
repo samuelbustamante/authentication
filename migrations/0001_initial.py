@@ -13,13 +13,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Allowed',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, primary_key=True, auto_created=True)),
-                ('username', models.CharField(verbose_name='username', unique=True, max_length=30)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', serialize=False, auto_created=True)),
+                ('username', models.CharField(max_length=64, unique=True, verbose_name='username')),
             ],
             options={
                 'verbose_name': 'usuario permitido',
                 'verbose_name_plural': 'usuarios permitidos',
             },
-            bases=(models.Model,),
         ),
     ]

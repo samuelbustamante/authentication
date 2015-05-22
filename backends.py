@@ -6,8 +6,7 @@ from xmlrpc.client import ServerProxy
 
 
 class LoginBackend(object):
-    """
-    """
+
     def __init__(self):
         self.domain = 'unsl.edu.ar'
         self.proxy_url = 'http://unslid.unsl.edu.ar:80/xmlrpc/server.php'
